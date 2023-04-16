@@ -12,7 +12,21 @@ class CartScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    var h = MediaQuery.of(context).size.height;
     return Scaffold(
+      bottomSheet: Container(
+          width: MediaQuery.of(context).size.width,
+          padding: const EdgeInsets.all(8),
+          height: h / 12,
+          child: MaterialButton(
+            elevation: 2,
+            onPressed: () {},
+            color: Colors.green,
+            child: const Text(
+              "Place order",
+              style: TextStyle(fontSize: 18, color: Colors.white),
+            ),
+          )),
       backgroundColor: const Color.fromARGB(234, 255, 255, 255),
       appBar: AppBar(
           backgroundColor: Colors.white,
@@ -31,28 +45,28 @@ class CartScreen extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
-            children: const [
-              CartCard(),
-              SizedBox(
+            children: [
+              const CartCard(),
+              const SizedBox(
                 height: 8,
               ),
-              CouponCard(),
-              SizedBox(
+              const CouponCard(),
+              const SizedBox(
                 height: 8,
               ),
-              Bill(),
-              SizedBox(
+              const Bill(),
+              const SizedBox(
                 height: 8,
               ),
-              TipCard(),
-              SizedBox(
+
+              /* const GiftCard(),
+              const SizedBox(
                 height: 8,
-              ),
-              GiftCard(),
+              ), */
+              const CancelCard(),
               SizedBox(
-                height: 8,
-              ),
-              CancelCard(),
+                height: h / 12,
+              )
             ],
           ),
         ),
