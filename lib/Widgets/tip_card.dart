@@ -13,14 +13,14 @@ class TipCard extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           const Text("Tip your delivery partner",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22)),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18)),
           const SizedBox(
             height: 12,
           ),
           Text(
             "Your kindness means a lot! 100% if your tip will go directly to your delivery partner.",
             style:
-                TextStyle(fontSize: 15, color: Colors.black.withOpacity(0.5)),
+                TextStyle(fontSize: 14, color: Colors.black.withOpacity(0.5)),
           ),
           const SizedBox(height: 16),
           Row(

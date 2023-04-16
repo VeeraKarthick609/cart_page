@@ -1,6 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:testing/Widgets/cart_items.dart';
 
+import '../Widgets/bill_card.dart';
+import '../Widgets/cancel_card.dart';
+import '../Widgets/coupon_card.dart';
+import '../Widgets/gift_card.dart';
+import '../Widgets/tip_card.dart';
+
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
 
@@ -21,9 +27,35 @@ class CartScreen extends StatelessWidget {
             ),
             onPressed: () {},
           )),
-      body: const Padding(
-        padding: EdgeInsets.all(8.0),
-        child: Scrollbar(child: CartCard()),
+      body: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            children: const [
+              CartCard(),
+              SizedBox(
+                height: 8,
+              ),
+              CouponCard(),
+              SizedBox(
+                height: 8,
+              ),
+              Bill(),
+              SizedBox(
+                height: 8,
+              ),
+              TipCard(),
+              SizedBox(
+                height: 8,
+              ),
+              GiftCard(),
+              SizedBox(
+                height: 8,
+              ),
+              CancelCard(),
+            ],
+          ),
+        ),
       ),
     );
   }

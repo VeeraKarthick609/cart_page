@@ -48,7 +48,7 @@ class ItemCard extends StatelessWidget {
                       Text(
                         name,
                         style: const TextStyle(
-                            fontWeight: FontWeight.bold, fontSize: 18),
+                            fontWeight: FontWeight.bold, fontSize: 16),
                       ),
                       Text(
                         "${qty}kg",
@@ -80,6 +80,8 @@ class ItemCard extends StatelessWidget {
                 GestureDetector(
                   onTap: () {},
                   child: Container(
+                    height: 35,
+                    width: 105,
                     decoration: BoxDecoration(
                         color: Colors.green,
                         borderRadius: BorderRadius.circular(12)),
@@ -91,6 +93,7 @@ class ItemCard extends StatelessWidget {
                             icon: const Icon(
                               Icons.remove,
                               color: Colors.white,
+                              size: 12,
                             )),
                         Text(
                           qty,
@@ -102,6 +105,7 @@ class ItemCard extends StatelessWidget {
                             icon: const Icon(
                               Icons.add,
                               color: Colors.white,
+                              size: 12,
                             ))
                       ],
                     ),

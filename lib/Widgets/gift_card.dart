@@ -18,7 +18,7 @@ class GiftCard extends StatelessWidget {
             children: const [
               Text(
                 "Order for someone else",
-                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+                style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
               ),
               Text(
                 "Add",
@@ -35,7 +35,7 @@ class GiftCard extends StatelessWidget {
               maxLines: 2,
               "Add a message to be sent as an SMS with your gift",
               style: TextStyle(
-                fontSize: 15,
+                fontSize: 14,
                 color: Colors.black.withOpacity(0.5),
               ),
             ),

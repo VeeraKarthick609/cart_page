@@ -12,7 +12,7 @@ class Bill extends StatelessWidget {
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         const Text(
           "Bill details",
-          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22),
+          style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
         ),
         Padding(
           padding: const EdgeInsets.symmetric(vertical: 12),
@@ -26,11 +26,11 @@ class Bill extends StatelessWidget {
                     Text(
                       "Item total (incl. taxes)",
                       style:
-                          TextStyle(fontWeight: FontWeight.w400, fontSize: 16),
+                          TextStyle(fontWeight: FontWeight.w400, fontSize: 14),
                     ),
                     Text("₹46",
                         style: TextStyle(
-                            fontWeight: FontWeight.w400, fontSize: 16))
+                            fontWeight: FontWeight.w400, fontSize: 14))
                   ],
                 ),
               ),
@@ -42,11 +42,11 @@ class Bill extends StatelessWidget {
                     Text(
                       "Delivery Charge",
                       style:
-                          TextStyle(fontWeight: FontWeight.w400, fontSize: 16),
+                          TextStyle(fontWeight: FontWeight.w400, fontSize: 14),
                     ),
                     Text("₹4",
                         style: TextStyle(
-                            fontWeight: FontWeight.w400, fontSize: 16))
+                            fontWeight: FontWeight.w400, fontSize: 14))
                   ],
                 ),
               ),

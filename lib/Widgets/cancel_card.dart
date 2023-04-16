@@ -14,7 +14,7 @@ class CancelCard extends StatelessWidget {
         children: [
           const Text(
             "Cancellation Policy",
-            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
+            style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
           ),
           const SizedBox(
             height: 8,
@@ -22,7 +22,7 @@ class CancelCard extends StatelessWidget {
           Text(
             "Orders cannot be cancelled once paked for delivery. In case of unexpected delays, a refund will be provided, if applicable",
             style: TextStyle(
-              fontSize: 15,
+              fontSize: 14,
               color: Colors.black.withOpacity(0.5),
             ),
           )

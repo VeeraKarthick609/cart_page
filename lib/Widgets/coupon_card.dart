@@ -11,6 +11,7 @@ class CouponCard extends StatelessWidget {
       padding: const EdgeInsets.all(8),
       child: Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: const [
             Icon(
               Icons.local_offer_rounded,
@@ -21,7 +22,7 @@ class CouponCard extends StatelessWidget {
             ),
             Text(
               "Use Coupons",
-              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 24),
+              style: TextStyle(fontWeight: FontWeight.bold, fontSize: 18),
             )
           ],
         ),
