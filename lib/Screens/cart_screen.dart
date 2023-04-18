@@ -4,8 +4,6 @@ import 'package:testing/Widgets/cart_items.dart';
 import '../Widgets/bill_card.dart';
 import '../Widgets/cancel_card.dart';
 import '../Widgets/coupon_card.dart';
-import '../Widgets/gift_card.dart';
-import '../Widgets/tip_card.dart';
 
 class CartScreen extends StatelessWidget {
   const CartScreen({super.key});
