@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:testing/Screens/widget_screen.dart';
-
-import 'Screens/cart_screen.dart';
+import 'package:testing/Screens/home_screen.dart';
 
 void main() {
   runApp(const MyApp());
@@ -28,7 +26,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.blue,
       ),
-      home: const WidgetsScreen(),
+      home: const HomeScreen(),
     );
   }
 }
